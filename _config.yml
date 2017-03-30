@@ -1,34 +1,36 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
-# Build settings
+highlighter: rouge
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+rdiscount:
+  extensions: [smart]
+permalink: :title.html
+paginate: 5
+gems: [jekyll-paginate]
+port: 4000
+safe: true
+url: http://biomadeira.github.io/vitae
+author: Fábio Madeira
+
+# edit this section with your information
+# biomadeira.github.io - all contents run on /vitae/
+# for a normal use at the base of the server change it to "/"
+baseurl: /
+title: Twin Karmakharm's Resume
+name: Twin Karmakharm
+jobtitle: Research Associate
+email: t.karmakharm@sheffield.ac.uk
+email_full: mailto:t.karmakharm@sheffield.ac.uk
+website: twin.uk.com
+website_full: https://twin.uk.com
+github: karmauk
+twitter: twin_karma
+#tel: +44 0000 000000
+#tel_full: tel:+440000000000
+google_maps: 'https://goo.gl/maps/p7FD9DPHKCD2'
+address: Computer Science Department<br/> University of Sheffield<br/> 211 Portobello
+postcode: S1 4DP
+city: Sheffield
+country: United Kingdom
+google_analytics: UA-69300817-1
+
+# needed for travis-ci build
+exclude: [vendor]
