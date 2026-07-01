@@ -11,3 +11,7 @@ Gemfile.lock
 
 # others
 *.swp
+
+
+# Ruby
+vendor/

@@ -1,6 +1,22 @@
 
 # Vitae
 
+## Using bundler
+
+### Install 
+
+```bash
+bundle install 
+```
+
+### Serve live preview
+
+```bash
+bundle exec jekyll serve
+```
+
+
+
 [![Build Status](https://secure.travis-ci.org/biomadeira/vitae.png?branch=gh-pages)](http://travis-ci.org/biomadeira/vitae)
 
 Personal homepage (curriculum vitae or resume) based on [João's](https://github.com/joaomoreno/resume).
